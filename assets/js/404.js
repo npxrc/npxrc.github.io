@@ -76,5 +76,5 @@ let nameList = [
   item.replace('!','')
   item.replace('?','')
   item.replace('...','')
-  item.replace('','')
+  item.replace(' ', '%20')
 document.getElementById('generateText').innerHTML = 'You misspelled /' + item + extension
