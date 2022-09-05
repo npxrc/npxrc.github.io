@@ -1,3 +1,4 @@
+function sleep(ms){new Promise(setTimeout(()=>{},ms));}
 let nameList = [
     `<playername> IS YOU`, `As seen on TV!`, `The End?`, `Should not be played while driving.`, `1% sugar!`,
     `Ph1lza had a good run!`, `Awesome!`, `100% pure!`, `May contain nuts!`, `All is full of love!`, `More polygons!`,
@@ -77,15 +78,3 @@ let nameList = [
   item.replace('...','')
   item.replace('','')
 document.getElementById('generateText').innerHTML = 'You misspelled /' + item + extension
-setTimeout(() => {
-    document.getElementById('generateText').innerHTML = 'This page will redirect to the home page in 5 seconds.'
-}, 10000);
-let e = 6
-setInterval(() => {
-    e-=1
-    if (e = 1){
-        document.getElementById('generateText').innerHTML = 'This page will redirect to the home page in '+e+' second.'
-    } else{
-        document.getElementById('generateText').innerHTML = 'This page will redirect to the home page in '+e+' seconds.'
-    }
-}, 1000);
