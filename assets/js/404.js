@@ -67,4 +67,8 @@ let nameList = [
     `Team Mystic!`, `Hamilton!`, `(Bedrock Edition beta test) Beta!`, `Absolutely no memes!`,
     ];
   let name = Math.floor(Math.random() * nameList.length);// picks random
+  nameList[name].replace('!','')
+  nameList[name].replace('?','')
+  nameList[name].replace('...','')
+  nameList[name].replace('.','')
 document.getElementById('generateText').innerHTML = 'You misspelled /' + nameList[name]
