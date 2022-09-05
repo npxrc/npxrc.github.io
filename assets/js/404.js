@@ -67,7 +67,7 @@ let nameList = [
     `missingno`, `In case it isn't obvious, foxes aren't players.`, `Buzzy Bees!`, `Minecraft Java Edition presents: Disgusting Bugs`,
     `Team Mystic!`, `Hamilton!`, `(Bedrock Edition beta test) Beta!`, `Absolutely no memes!`,
     ];
-  let extensionList = ['ts','html','htm','txt','c++','md','scss','jar','run','sh']
+  let extensionList = ['ts','html','htm','txt','c++','md','scss','jar','run','sh','exe','dmg','php','aspx','mp4','mov','png']
   let i = Math.floor(Math.random() * nameList.length);// picks random
   let ie = Math.floor(Math.random() * extensionList.length);// picks random
   let item = nameList[i]
