@@ -73,8 +73,5 @@ let nameList = [
   let item = nameList[i]
   let extension = extensionList[ie]
   extension='.'+extension
-  item.replace('!','')
-  item.replace('?','')
-  item.replace('...','')
   item.replace(' ', '%20')
 document.getElementById('generateText').innerHTML = 'You misspelled /' + item + extension
