@@ -77,21 +77,6 @@ let nameList = [
   item.replace('...','')
   item.replace('','')
 document.getElementById('generateText').innerHTML = 'You misspelled /' + item + extension
-setTimeout(()=>{
+setTimeout(() => {
     document.getElementById('generateText').innerHTML = 'This page will redirect to the home page in 5 seconds.'
-},10000)
-setTimeout(()=>{
-    document.getElementById('generateText').innerHTML = 'This page will redirect to the home page in 4 seconds.'
-},1000);
-setTimeout(()=>{
-    document.getElementById('generateText').innerHTML = 'This page will redirect to the home page in 3 seconds.'
-},1000);
-setTimeout(()=>{
-    document.getElementById('generateText').innerHTML = 'This page will redirect to the home page in 2 seconds.'
-},1000);
-setTimeout(()=>{
-    document.getElementById('generateText').innerHTML = 'This page will redirect to the home page in 1 second.'
-},1000);
-setTimeout(()=>{
-    location.replace('https://thegamers.netlify.app')
-},1000)
+}, 10000);
