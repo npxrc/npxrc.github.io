@@ -76,6 +76,8 @@ let nameList = [
   item.replace(' ', '%20')
   if (location.pathname.includes('assets/')||location.pathname.includes('images/')){
     document.getElementById('generateText').innerHTML = 'You can\'t go here.'
+    document.getElementById('errorCode').innerHTML = '403'
+    document.getElementById('buttonErrorText').innerHTML = 'To The Allowed'
   } else{
     document.getElementById('generateText').innerHTML = 'You misspelled /' + item + extension
   }
